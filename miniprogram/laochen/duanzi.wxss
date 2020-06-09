@@ -1,0 +1,4 @@
+/* miniprogram/laochen/duanzi.wxss */
+.duanzi-ctn{
+    text-align: center;
+}

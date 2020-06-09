@@ -1,0 +1,5 @@
+<!--miniprogram/laochen/duanzi.wxml-->
+<view class="duanzi-ctn">
+    this is my duanzi page
+</view>
+<button bindtap="turnToPage">turn to home page</button>
