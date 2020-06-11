@@ -1,10 +1,42 @@
 /* miniprogram/laochen/duanzi.wxss */
-.duanzi-item .item-header{
-    padding: 16rpx;
+
+.duanzi-item {
+    width: 750rpx;
 }
-.duanzi-item .item-header .item-avatar{
+
+.duanzi-item .item-header {
+    display: flex;
+    align-items: center;
+}
+
+.duanzi-item .item-avatar image {
     width: 64rpx;
     height: 64rpx;
+    margin: 20rpx;
     border-radius: 32rpx;
+}
 
+.duanzi-item .item-header view {}
+
+.duanzi-item .item-header .item-username {
+    font-size: 28rpx;
+}
+
+.duanzi-item .item-header .item-dateTime {
+    font-size: 24rpx;
+    color: #999;
+}
+
+.duanzi-item .item-content {
+    padding: 10rpx 20rpx;
+}
+
+.duanzi-item .bottom-box {
+    display: flex;
+}
+
+.duanzi-item .bottom-box .bottom-btn {
+    background-color: #fff;
+    font-size: 24rpx;
+    font-weight: 500;
 }

@@ -2,19 +2,21 @@
 <view class="duanzi-ctn">
     <view class="duanzi-item" wx:for="{{textList}}" wx:key="sid" data-sid="{{item.sid}}" data-uid="{{item.uid}}">
         <view class="item-header">
-            <image class="item-avatar" src="{{item.header}}" mode="aspectFill" lazy-load="true" />
-            <view hover-class="none" hover-stop-propagation="false">
-                <text class="item-username" selectable="false" space="true" decode="false">
+            <view class="item-avatar">
+                <image src="{{item.header}}" mode="aspectFit"></image>
+            </view>
+            <view class="item-txt">
+                <view class="item-username">
                     {{item.name}}
-                </text>
-                <text class="item-dateTime" selectable="false" space="false" decode="false">
+                </view>
+                <view class="item-dateTime">
                     {{item.passtime}}
-                </text>
+                </view>
             </view>
         </view>
-        <text class="item-content" selectable="false" space="false" decode="false">
+        <view class="item-content" selectable="false" space="false" decode="false">
             {{item.text}}
-        </text>
+        </view>
         <view class="bottom-box">
             <button class="bottom-btn">{{item.down}}</button>
             <button class="bottom-btn">{{item.comment}}</button>
