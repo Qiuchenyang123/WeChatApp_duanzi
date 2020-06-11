@@ -18,8 +18,6 @@ const option3 = {
 };
 
 exports.main = async(event, context) => {
-    console.log(event);
     const result = await axios.get(httpUrl, { params: event });
-
     return result.data
 }

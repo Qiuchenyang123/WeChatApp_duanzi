@@ -1,27 +1,51 @@
 {
-    "pages": [
-        "laochen/duanzi",
-        "pages/index/index",
-        "pages/userConsole/userConsole",
-        "pages/storageConsole/storageConsole",
-        "pages/databaseGuide/databaseGuide",
-        "pages/addFunction/addFunction",
-        "pages/deployFunctions/deployFunctions",
-        "pages/chooseLib/chooseLib",
-        "pages/openapi/openapi",
-        "pages/openapi/serverapi/serverapi",
-        "pages/openapi/callback/callback",
-        "pages/openapi/cloudid/cloudid",
-        "pages/im/im",
-        "pages/im/room/room"
-    ],
-    "window": {
-        "backgroundColor": "#F6F6F6",
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#F6F6F6",
-        "navigationBarTitleText": "段子app",
-        "navigationBarTextStyle": "black"
-    },
-    "sitemapLocation": "sitemap.json",
-    "style": "v2"
+  "pages": [
+    "laochen/duanzi",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "laochen/image",
+    "laochen/video"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "段子app",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#f9f9f9",
+    "borderStyle": "white",
+    "selectedColor": "#00b38b",
+    "color": "#666666",
+    "list": [{
+      "pagePath": "laochen/duanzi",
+      "iconPath": "images/tabBar/duanzi.png",
+      "selectedIconPath": "images/tabBar/duanzion.png",
+      "text": "段子"
+    }, {
+      "pagePath": "laochen/image",
+      "iconPath": "images/tabBar/image.png",
+      "selectedIconPath": "images/tabBar/imageon.png",
+      "text": "图片"
+    }, {
+      "pagePath": "laochen/video",
+      "iconPath": "images/tabBar/video.png",
+      "selectedIconPath": "images/tabBar/videoon.png",
+      "text": "视频"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
 }

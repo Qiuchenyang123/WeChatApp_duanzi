@@ -5,7 +5,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        textList: []
     },
     turnToPage() {
         wx.navigateTo({
@@ -16,6 +16,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        const self = this;
         wx.cloud.callFunction({
             name: 'duanzi',
             data: {
@@ -25,6 +26,9 @@ Page({
             },
             success(res) {
                 console.log(21, res);
+                self.setData({
+                    textList: res.result.result
+                })
             }
         })
     },
