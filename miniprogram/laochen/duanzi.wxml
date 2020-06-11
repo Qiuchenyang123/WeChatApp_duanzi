@@ -1,5 +1,24 @@
 <!--miniprogram/laochen/duanzi.wxml-->
 <view class="duanzi-ctn">
-    this is my duanzi page
+    <view class="duanzi-item" wx:for="{{textList}}" wx:key="sid" data-sid="{{item.sid}}" data-uid="{{item.uid}}">
+        <view class="item-header">
+            <image class="item-avatar" src="{{item.header}}" mode="aspectFill" lazy-load="true" />
+            <view hover-class="none" hover-stop-propagation="false">
+                <text class="item-username" selectable="false" space="true" decode="false">
+                    {{item.name}}
+                </text>
+                <text class="item-dateTime" selectable="false" space="false" decode="false">
+                    {{item.passtime}}
+                </text>
+            </view>
+        </view>
+        <text class="item-content" selectable="false" space="false" decode="false">
+            {{item.text}}
+        </text>
+        <view class="bottom-box">
+            <button class="bottom-btn">{{item.down}}</button>
+            <button class="bottom-btn">{{item.comment}}</button>
+            <button class="bottom-btn">{{item.forward}}</button>
+        </view>
+    </view>
 </view>
-<button bindtap="turnToPage">turn to home page</button>
