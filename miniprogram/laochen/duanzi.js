@@ -21,7 +21,7 @@ Page({
             data: {
                 page: 1,
                 count: 10,
-                type: 'image'
+                type: 'text'
             },
             success(res) {
                 console.log(21, res);
